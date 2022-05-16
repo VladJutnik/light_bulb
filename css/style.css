@@ -12,6 +12,7 @@ body {
 }
 label {
     position: relative;
+    top: -235px;
     width: 150px;
     height: 75px;
     background: #1d1d1d;
@@ -44,5 +45,21 @@ label span ion-icon{
     transition: 0.5s;
 }
 label input:checked ~ span ion-icon{
-    color: #ffffff;
+    color: #d7d6d6;
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
 }
+.light{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 307px;
+    pointer-events: none;
+    background: url('image/off2.png');
+    transition: 0.5s;
+}
+label input:checked ~ .light{
+    background: url('image/on2.png');
+    filter: drop-shadow(0 0 10px #becb40) drop-shadow(0 0 20px #BECB40) drop-shadow(0 0 30px #BECB40);
+ }
